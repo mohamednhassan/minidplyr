@@ -15,10 +15,10 @@
 #'
 #' @examples
 #' select2(df = iris, cols_to_select = "Species")
-#' select2(df = iris, cols_to_select = 5)
+#' select2(df = iris, vars = 5)
 #'
 #' 
-select2 <- function(df, cols_to_select){
-  selected_cols = df[, cols_to_select]
+select2 <- function(df, vars){
+  selected_cols = df[vars]
   return (selected_cols)
 }

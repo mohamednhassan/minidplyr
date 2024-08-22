@@ -4,7 +4,7 @@
 \alias{select2}
 \title{select variables}
 \usage{
-select2(df, cols_to_select)
+select2(df, vars)
 }
 \arguments{
 \item{df}{a dataframe}
@@ -19,7 +19,7 @@ This function selects columns
 }
 \examples{
 select2(df = iris, cols_to_select = "Species")
-select2(df = iris, cols_to_select = 5)
+select2(df = iris, vars = 5)
 
 
 }
