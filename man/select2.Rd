@@ -9,7 +9,7 @@ select2(df, vars)
 \arguments{
 \item{df}{a dataframe}
 
-\item{cols_to_select}{character vector of variable names or integer for index}
+\item{vars}{character vector of variable names or integer for index}
 }
 \value{
 returns data frame with selected column(s)
@@ -18,7 +18,7 @@ returns data frame with selected column(s)
 This function selects columns
 }
 \examples{
-select2(df = iris, cols_to_select = "Species")
+select2(df = iris, vars = "Species")
 select2(df = iris, vars = 5)
 
 

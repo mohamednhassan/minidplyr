@@ -5,7 +5,7 @@
 #' @param df 
 #' a dataframe
 #' 
-#' @param cols_to_select 
+#' @param vars 
 #' character vector of variable names or integer for index
 #'
 #' @return
@@ -14,11 +14,10 @@
 #' @export
 #'
 #' @examples
-#' select2(df = iris, cols_to_select = "Species")
+#' select2(df = iris, vars = "Species")
 #' select2(df = iris, vars = 5)
 #'
 #' 
 select2 <- function(df, vars){
-  selected_cols = df[vars]
-  return (selected_cols)
+  df[vars]
 }
